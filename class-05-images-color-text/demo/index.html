@@ -5,49 +5,43 @@
         <style>
             * {
                 border: dotted 1px blue;
+                background: white;
             }
 
             html, body {
-                height: 100%;
-                width: 100%;
-                padding: 0;
+                height: 100vh;
                 margin: 0;
-                border: none;
+                padding: 0;
             }
 
             header {
-                height: 100px;
-                width: 100%;
+                height: 200px;
                 position: fixed;
-                top: 0;
+                width: 100%;
             }
 
             #container {
-                margin: 100px 0 0 0;
+                height: fit-content;
+                margin-top: 200px;
             }
-            
-            main {
-                min-height: 1000px;
-                width: calc( 80% - 2px); 
+
+            #container > * {
+                min-height: 500px;
+                padding: 20px;
                 box-sizing: border-box;
-                display: inline-block;
-            }
-            
-            aside {
-                min-height: 1000px;
-                width: calc( 20% - 2px); 
-                box-sizing: border-box;
+                width: calc(50% - 4px);
                 display: inline-block;
             }
 
             footer {
-                height: 5em;
+                height: 37%;
             }
         </style>
     </head>
     <body>
         <!--  Create a standard blog layout: header, main content, sidebar, footer -->
         <header>
+            <h1>no a blog </h1>
         </header>
         <div id="container">
             <main>

@@ -6,8 +6,9 @@
 
         <style>
             * {
-                border: dotted 1px tan;
+                border: dotted 1px blue;
             }
+
             main, main article { border-color: purple; }
             p, img { border: none; }
 
@@ -54,10 +55,13 @@
             img {
                 width: 100%;
             }
-
+            
             /* when our page is > 600px */
             @media ( min-width: 600px ) {
-                
+                article {
+                    display: inline-block;
+                    width: 200px;
+                }
             }
         </style>
     </head>

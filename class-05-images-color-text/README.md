@@ -34,7 +34,7 @@
 - Deploy to GH Pages
 	- about your README.md
 		- what to include: description, license, contributors
-		- markdown syntax
+		- [markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 	- create a branch: `git checkout -b gh-pages`
 	- push to github
 	- visit your page: `<your-user-name>.github.io/<repo-name>`
