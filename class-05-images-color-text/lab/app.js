@@ -22,6 +22,7 @@ function sum(a,b){ //eslint-disable-line
     return [ sum, str ];    // return [ sum, "The sum of " + a + " and " + b + " is " + sum + "."];
 }
 
+
 // sum (1, 2); // [ 3, "The sum of 1 and 2 is 3."]
 
 testSum(4, 7);  // test for sum(); uncomment it to run it
@@ -45,10 +46,14 @@ create a new branch for your work on the next question!
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
 
+    var mult = a * b;
+    var str = "The product of " + a + " and " + b + " is " + mult + ".";
+    
+    return [ mult, str ];    // return [ mult, "The product of " + a + " and " + b + " is " + mult + "."];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 
 /////////////////////////////////////
