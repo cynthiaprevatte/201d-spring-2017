@@ -122,24 +122,20 @@ a string that EXACTLY follows this:
 
 "The numbers 2,3,4 have a product of 24."
 
-IMPORTANT DETAIL: You may not use the arithmetic operator * in this 
-function. To do multiplication, use your multiply() function that 
-you've already created. You're going to have to be resourceful to 
-figure out how to do this.
+IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that 
+you've already created. 
 
-Test this function by hand in the console to get it working, and 
-when you think it is finished, uncomment the call for the 
-testMultiplyArray() function and see if the test passes.
-
-Once you get the test passing, do an a-c-p cycle and synchronize the 
-code between GitHub and your laptop. Don't forget to create a 
-new branch for your work on the next question!
 */
 
-// Write your code here
+
 function multiplyArray(testArray){ //eslint-disable-line
 
+    var multOf = multiply (testArray[0], (multiply (testArray[1], testArray[2] ) )[0] );
+    console.log (multOf[0]);
+    var str = ("The numbers " + testArray[0] + "," + testArray[1] + "," + testArray[2] + " have a product of " + multOf[0] + ".");
+    console.log( str);
+    return [multOf, str];
 }
 
-// Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+// Here is the test for multiplyArray();
+testMultiplyArray(2,3,4);
